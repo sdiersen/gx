@@ -1,0 +1,14 @@
+{
+  "name": "gx",
+  "version": "1.0.0",
+  "description": "testing ground for a group fitness dynamic schedule system",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "?.git"
+  },
+  "author": "Steve Diersen"
+}
