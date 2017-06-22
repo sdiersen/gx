@@ -1,0 +1,201 @@
+#gxScheduleForm {
+    font: normal .8em/1em Arial, Helvetica, Geneva, sans-serif;
+    width: 80%;
+    margin: 0 auto;
+    background: url(brownlines.jpg) #ddd;
+    
+    -webkit-border-radius: 10px;
+    -moz-border-radius: 10px;
+    border-radius: 10px;
+    
+    -webkit-box-shadow: 10px 10px 20px #20242c;
+    -mox-box-shadow: 10px 10xp 20px #20242c;
+    box-shadow: 10px 10px 20px #20242c;
+}
+
+#gxScheduleForm fieldset {
+	border: none;
+    margin: 0;
+    padding: 0;
+}
+
+#gxScheduleForm fieldset:before {
+    content:attr(title);
+    display: block;
+    padding: 0;
+    padding: 20px 10px 3px 10px;
+    font-weight: bold;
+    font-size: 1.25em;
+    color: #1bb;
+    margin: 0 auto;
+    text-shadow: 1px 1px 1px #3a6;
+}
+
+#gxScheduleForm legend {
+    display: none;
+}
+
+#gxScheduleForm ol {
+    margin: 0px;
+    padding: 0px;
+}
+
+#gxScheduleForm ol li {
+    position: relative;
+    list-style: none;
+    padding: 8px;
+    border-top: 1px solid #eee;
+    border-bottom: 1px solid #888;
+}
+
+#gxScheduleForm ol li:first-child {
+    border-top: none;
+}
+
+#gxScheduleForm ol li:last-child {
+    border-bottom: none;
+}
+    
+#gxScheduleForm ol li ol li {
+    padding-bottom: 0;
+    display: inline;
+    padding: 0px;
+    border-top: none;
+    border-bottom: none;
+}
+
+#gxScheduleForm ol li ol li label {
+    font-weight: normal;
+    display: inline;
+    cursor: pointer;
+}
+
+#gxScheduleForm ol li.singleline label {
+    font-weight: normal;
+    display: inline;
+}
+
+#gxScheduleForm ol li label, .grouphead {
+    font-weight: bold;
+    display: block;
+    margin-bottom: 5px;
+    color: #821200;
+    text-shadow: 1px 1px 1px #271200;
+    padding-left: 5px;
+}
+
+#gxScheduleForm ol li input, #gxScheduleForm textarea {
+    display: block;
+    width: 96%;
+    padding: 5px;
+    margin: 0 auto;
+    outline: none;
+    border: 1px solid #999;
+    
+    background: #cccccc;
+    background: -webkit-linear-gradient(#ffffff, #bbbbbb) no-repeat;
+    background: -moz-linear-gradient(#ffffff, #bbbbbb) no-repeat;
+    background: -ms-linear-gradient(#ffffff, #bbbbbb) no-repeat;
+    background: -o-linear-gradient(#ffffff, #bbbbbb) no-repeat;
+    background: linear-gradient(#ffffff, #bbbbbb) no-repeat;
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#bbbbbb', GradientType=0 );
+    
+    -webkit-border-radius: 5px;
+    -moz-border-radius: 5px;
+    border-radius: 5px;
+}
+
+#gxScheduleForm ol li ol li input {
+    width: auto;
+    display: inline;
+}
+
+#gxScheduleForm ol li input[type="checkbox"] {
+    width: auto;
+    display: inline;
+}
+
+#gxScheduleForm textarea {
+    height: 75px;
+}
+
+#gxScheduleForm ol li select {
+    width: 200px;
+    width: 50%;
+    min-width: 100px;
+    color: #411200;
+    font-weight: bold;
+    border: 0;
+    
+    background: #93481a;
+    background: -webkit-linear-gradient(#93481a, #6d2f0e);
+    background: -moz-linear-gradient(#93481a, #6d2f0e);
+    background: -ms-linear-gradient(#93481a, #6d2f0e);
+    background: -o-linear-gradient(#93481a, #6d2f0e);
+    background: linear-gradient(#93481a, #6d2f0e);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93481a', endColorstr='#6d2f0e', GradientType=0 );
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#gxScheduleForm button, #gxScheduleForm .buttonnav {
+    width: 100px;
+    width: 20%;
+    min-width: 100px;
+    height: 24px;
+    float: right;
+    padding: 0;
+    margin-right: 10px;
+    margin-top: 5px;
+    border: 0;
+    color: #fff;
+    font-weight: bold;
+    cursor: pointer;
+    
+    background: #466e82;
+    background: -webkit-linear-gradient(#466e82, #2c4552);
+    background: -moz-linear-gradient(#466e82, #2c4552);
+    background: -ms-linear-gradient(#466e82, #2c4552);
+    background: -o-linear-gradient(#466e82, #2c4552);
+    background: linear-gradient(#466e82, #2c4552);
+    
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#466e82', endColorstr='#2c4552', GradientType=0 );
+    
+    -webkit-border-radius: 8px;
+    -moz-border-radius: 8px;
+    border-radius: 8px;
+}
+
+#gxScheduleForm button:hover, #gxScheduleForm .buttonnav:hover {
+    background: #93481a;
+    background: -webkit-linear-gradient(#93481a, #6d2f0e);
+    background: -moz-linear-gradient(#93481a, #6d2f0e);
+    background: -ms-linear-gradient(#93481a, #6d2f0e);
+    background: -o-linear-gradient(#93481a, #6d2f0e);
+    background: linear-gradient(#93481a, #6d2f0e);
+    filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93481a', endColorstr='#6d2f0e', GradientType=0 );
+}
+
+#gxScheduleForm .buttonnav {
+    display: inline-block;
+    height: 19px;
+    padding-top: 5px;
+    text-align: center;
+    margin-bottom: 10px;    
+    zoom: 1;
+    *display: inline;
+}
+
+#gxScheduleForm .buttonnav.prev {
+    margin-left: 10px;
+    float: none;    
+    background: -webkit-linear-gradient(#466e82, #2c4552);
+}
+
+#gxScheduleForm .buttonnav.prev:hover {
+    margin-left: 10px;
+    float: none;    
+    background: -webkit-linear-gradient(#93481a, #6d2f0e);
+}

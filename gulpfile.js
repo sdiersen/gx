@@ -7,7 +7,8 @@ var gulp = require('gulp'),
 	connect = require('gulp-connect'),
 	gulpif = require('gulp-if')
 	uglify = require('gulp-uglify'), 
-	minifyHTML = require('gulp-minify-html');
+	minifyHTML = require('gulp-minify-html'),
+	jsonMinify = require('gulp-jsonminify');
 
 var env, 
 	coffeeSources, 
@@ -30,19 +31,14 @@ if (env === 'development') {
 
 coffeeSources = ['components/coffee/*.coffee'];
 
-jsSources = [
-	'components/scripts/rclick.js', 
-	'components/scripts/pixgrid.js',
-	'components/scripts/tagline.js',
-	'components/scripts/template.js'
-];
+jsSources = ['components/scripts/*.js'];
 
 sassSources = ['components/sass/style.scss'];
 
 
 htmlSources = [outputDir + '*.html'];
 
-jsonSources = ['components/json/*.json'];
+jsonSources = [outputDir + '*.json'];
 
 gulp.task('coffee', function() {
 	gulp.src(coffeeSources)
@@ -55,7 +51,7 @@ gulp.task('js', function() {
 	gulp.src(jsSources)
 		.pipe(concat('script.js'))
 		.pipe(browserify())
-		.pipe(gulpif(env === 'production' uglify()))
+		.pipe(gulpif(env === 'production', uglify()))
 		.pipe(gulp.dest(outputDir + 'js'))
 		.pipe(connect.reload())
 });
@@ -77,7 +73,7 @@ gulp.task('watch', function() {
 	gulp.watch(jsSources, ['js']);
 	gulp.watch('components/sass/*.scss', ['compass']);
 	gulp.watch('builds/development/*.html', ['html']);
-	gulp.watch(jsonSources, ['json']);
+	gulp.watch('builds/development/js/*.json', ['json']);
 });
 
 gulp.task('connect', function() {
@@ -95,7 +91,9 @@ gulp.task('html', function() {
 });
 
 gulp.task('json', function() {
-	gulp.src(jsonSources)
+	gulp.src('builds/development/js/*.json')
+		.pipe(gulpif(env === 'production', jsonMinify()))
+		.pipe(gulpif(env === 'production', gulp.dest('builds/production/js')))
 		.pipe(connect.reload())
 });
 

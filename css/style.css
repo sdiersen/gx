@@ -1,4 +1,3 @@
-@import "http://fonts.googleapis.com/css?family=Patua+One|Inika";
 html, body, div, span, applet, object, iframe,
 h1, h2, h3, h4, h5, h6, p, blockquote, pre,
 a, abbr, acronym, address, big, cite, code,
@@ -55,276 +54,761 @@ article, aside, details, figcaption, figure, footer, header, hgroup, main, menu,
   display: block;
 }
 
+/*! normalize.css v3.0.2 | MIT License | git.io/normalize */
+/**
+ * 1. Set default font family to sans-serif.
+ * 2. Prevent iOS text size adjust after orientation change, without disabling
+ *    user zoom.
+ */
+html {
+  font-family: sans-serif;
+  /* 1 */
+  -ms-text-size-adjust: 100%;
+  /* 2 */
+  -webkit-text-size-adjust: 100%;
+  /* 2 */
+}
+
+/**
+ * Remove default margin.
+ */
 body {
-  background: #eddbba;
-  font-family: "Inika", serif;
-  font-size: 1.1em;
+  margin: 0;
 }
 
-#content {
-  color: #CC8E94;
-  font-size: 2em;
+/* HTML5 display definitions
+   ========================================================================== */
+/**
+ * Correct `block` display not defined for any HTML5 element in IE 8/9.
+ * Correct `block` display not defined for `details` or `summary` in IE 10/11
+ * and Firefox.
+ * Correct `block` display not defined for `main` in IE 11.
+ */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+main,
+menu,
+nav,
+section,
+summary {
+  display: block;
 }
 
-.container {
-  width: 90%;
-  max-width: 1000px;
-  margin: 0 auto;
-  position: relative;
+/**
+ * 1. Correct `inline-block` display not defined in IE 8/9.
+ * 2. Normalize vertical alignment of `progress` in Chrome, Firefox, and Opera.
+ */
+audio,
+canvas,
+progress,
+video {
+  display: inline-block;
+  /* 1 */
+  vertical-align: baseline;
+  /* 2 */
 }
 
-h1, h2, h3, h4, h5, h6 {
-  font-family: "Patua One", sans-serif;
-  font-size: 3em;
+/**
+ * Prevent modern browsers from displaying `audio` without controls.
+ * Remove excess height in iOS 5 devices.
+ */
+audio:not([controls]) {
+  display: none;
+  height: 0;
 }
 
+/**
+ * Address `[hidden]` styling not present in IE 8/9/10.
+ * Hide the `template` element in IE 8/9/11, Safari, and Firefox < 22.
+ */
+[hidden],
+template {
+  display: none;
+}
+
+/* Links
+   ========================================================================== */
+/**
+ * Remove the gray background color from active links in IE 10.
+ */
+a {
+  background-color: transparent;
+}
+
+/**
+ * Improve readability when focused and also mouse hovered in all browsers.
+ */
+a:active,
+a:hover {
+  outline: 0;
+}
+
+/* Text-level semantics
+   ========================================================================== */
+/**
+ * Address styling not present in IE 8/9/10/11, Safari, and Chrome.
+ */
+abbr[title] {
+  border-bottom: 1px dotted;
+}
+
+/**
+ * Address style set to `bolder` in Firefox 4+, Safari, and Chrome.
+ */
+b,
+strong {
+  font-weight: bold;
+}
+
+/**
+ * Address styling not present in Safari and Chrome.
+ */
+dfn {
+  font-style: italic;
+}
+
+/**
+ * Address variable `h1` font-size and margin within `section` and `article`
+ * contexts in Firefox 4+, Safari, and Chrome.
+ */
 h1 {
-  font-size: 3.5em;
-  margin-bottom: 10px;
-  color: #507356;
-}
-@media (max-width: 700px) {
-  h1 {
-    font-size: 2.2em;
-  }
+  font-size: 2em;
+  margin: 0.67em 0;
 }
 
-h2 {
-  font-size: 1.5em;
-  color: #3E2B3D;
+/**
+ * Address styling not present in IE 8/9.
+ */
+mark {
+  background: #ff0;
+  color: #000;
 }
 
-p {
-  font-size: 1.3em;
-  line-height: 1.5em;
-  color: #3E2B3D;
-  margin-bottom: 20px;
-  margin-top: 15px;
+/**
+ * Address inconsistent and variable font size in all browsers.
+ */
+small {
+  font-size: 80%;
 }
 
-section {
-  padding: 20px 0;
-}
-
-.artgroup:after {
-  content: "";
-  display: table;
-  clear: both;
-}
-
-.city {
-  background: url("../images/backgrounds/seattle_skyline.jpg") no-repeat 50% 20%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-}
-@media (min-width: 801px) {
-  .city {
-    height: 350px;
-  }
-}
-@media (max-width: 800px) {
-  .city {
-    height: 150px;
-  }
-}
-@media (max-width: 300px) {
-  .city {
-    height: 100px;
-  }
-}
-.city img.logo {
-  position: absolute;
-  right: 0;
-  top: 0;
-  width: 50%;
-  max-width: 450px;
-  min-width: 250px;
-}
-
-.featuredartists {
-  background: #8D8862;
-  border-top: 20px solid #E3C691;
-  border-bottom: 50px solid #507356;
-}
-.featuredartists h1 {
-  font-size: 3em;
-  color: #263729;
-}
-@media (max-width: 700px) {
-  .featuredartists h1 {
-    font-size: 2em;
-  }
-}
-.featuredartists h2 {
-  margin-top: 20px;
-  font-size: 1.8em;
-  color: #dbb570;
-}
-@media (max-width: 700px) {
-  .featuredartists h2 {
-    display: none;
-  }
-}
-.featuredartists p {
-  color: #314634;
-}
-.featuredartists .artistlist {
-  padding-bottom: 20px;
-}
-.featuredartists .artistlist h2 {
-  margin-top: 5px;
-  font-size: 1.2em;
-  color: #ebd7b2;
-}
-.featuredartists .artistlist .item {
-  min-width: 95px;
-  color: #6f6b4d;
-  width: 18%;
-  float: left;
-  padding: 1%;
-  text-align: center;
+/**
+ * Prevent `sub` and `sup` affecting `line-height` in all browsers.
+ */
+sub,
+sup {
+  font-size: 75%;
+  line-height: 0;
   position: relative;
-}
-.featuredartists .artistlist .item > img {
-  max-width: 130px;
-  margin: 0 auto;
-  display: block;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  width: 100%;
+  vertical-align: baseline;
 }
 
-.potterypix {
-  background: url("../images/backgrounds/pottery_workshop.jpg") no-repeat 50% 20%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  border-bottom: 50px solid #8D8862;
-}
-@media (min-width: 801px) {
-  .potterypix {
-    height: 350px;
-  }
-}
-@media (max-width: 800px) {
-  .potterypix {
-    height: 150px;
-  }
-}
-@media (max-width: 300px) {
-  .potterypix {
-    height: 100px;
-  }
+sup {
+  top: -0.5em;
 }
 
-.aboutvenue img {
-  float: right;
+sub {
+  bottom: -0.25em;
 }
 
-.workshoppix {
-  background: url("../images/backgrounds/woodworking_workshop.jpg") no-repeat 50% 20%;
-  -webkit-background-size: cover;
-  -moz-background-size: cover;
-  -o-background-size: cover;
-  background-size: cover;
-  -webkit-transition: all 0.3s ease-out;
-  -moz-transition: all 0.3s ease-out;
-  -o-transition: all 0.3s ease-out;
-  transition: all 0.3s ease-out;
-  border-bottom: 50px solid #8D8862;
-}
-@media (min-width: 801px) {
-  .workshoppix {
-    height: 350px;
-  }
-}
-@media (max-width: 800px) {
-  .workshoppix {
-    height: 150px;
-  }
-}
-@media (max-width: 300px) {
-  .workshoppix {
-    height: 100px;
-  }
+/* Embedded content
+   ========================================================================== */
+/**
+ * Remove border when inside `a` element in IE 8/9/10.
+ */
+img {
+  border: 0;
 }
 
-.ontour h1 {
-  color: #4d354c;
-  font-size: 3em;
-  bottom: 10px;
-  right: 10%;
-}
-.ontour h2 {
-  font-size: 1.8em;
-  color: #8D8862;
-  border-top: 1px solid #8D8862;
-  padding-top: 5px;
-}
-.ontour h3 {
-  font-size: 1.3em;
-  color: #6b4a69;
-  padding-bottom: 5px;
-}
-.ontour img {
-  float: right;
-  -moz-border-radius: 50%;
-  -webkit-border-radius: 50%;
-  border-radius: 50%;
-  padding-left: 20px;
-  width: 20%;
-  min-width: 120px;
-  max-width: 160px;
+/**
+ * Correct overflow not hidden in IE 9/10/11.
+ */
+svg:not(:root) {
+  overflow: hidden;
 }
 
-.pixgrid img {
-  max-width: 90px;
-  display: block;
-  -moz-border-radius: 15px;
-  -webkit-border-radius: 15px;
-  border-radius: 15px;
-  padding: 0 5px 5px 0;
-  cursor: url(../images/misc/magnifying_glass.png), auto;
+/* Grouping content
+   ========================================================================== */
+/**
+ * Address margin not present in IE 8/9 and Safari.
+ */
+figure {
+  margin: 1em 40px;
 }
-.pixgrid .preview img {
+
+/**
+ * Address differences between Firefox and other browsers.
+ */
+hr {
+  -moz-box-sizing: content-box;
+  box-sizing: content-box;
+  height: 0;
+}
+
+/**
+ * Contain overflow in all browsers.
+ */
+pre {
+  overflow: auto;
+}
+
+/**
+ * Address odd `em`-unit font size rendering in all browsers.
+ */
+code,
+kbd,
+pre,
+samp {
+  font-family: monospace, monospace;
+  font-size: 1em;
+}
+
+/* Forms
+   ========================================================================== */
+/**
+ * Known limitation: by default, Chrome and Safari on OS X allow very limited
+ * styling of `select`, unless a `border` property is set.
+ */
+/**
+ * 1. Correct color not being inherited.
+ *    Known issue: affects color of disabled elements.
+ * 2. Correct font properties not being inherited.
+ * 3. Address margins set differently in Firefox 4+, Safari, and Chrome.
+ */
+button,
+input,
+optgroup,
+select,
+textarea {
+  color: inherit;
+  /* 1 */
+  font: inherit;
+  /* 2 */
+  margin: 0;
+  /* 3 */
+}
+
+/**
+ * Address `overflow` set to `hidden` in IE 8/9/10/11.
+ */
+button {
+  overflow: visible;
+}
+
+/**
+ * Address inconsistent `text-transform` inheritance for `button` and `select`.
+ * All other form control elements do not inherit `text-transform` values.
+ * Correct `button` style inheritance in Firefox, IE 8/9/10/11, and Opera.
+ * Correct `select` style inheritance in Firefox.
+ */
+button,
+select {
+  text-transform: none;
+}
+
+/**
+ * 1. Avoid the WebKit bug in Android 4.0.* where (2) destroys native `audio`
+ *    and `video` controls.
+ * 2. Correct inability to style clickable `input` types in iOS.
+ * 3. Improve usability and consistency of cursor style between image-type
+ *    `input` and others.
+ */
+button,
+html input[type="button"],
+input[type="reset"],
+input[type="submit"] {
+  -webkit-appearance: button;
+  /* 2 */
+  cursor: pointer;
+  /* 3 */
+}
+
+/**
+ * Re-set default cursor for disabled elements.
+ */
+button[disabled],
+html input[disabled] {
+  cursor: default;
+}
+
+/**
+ * Remove inner padding and border in Firefox 4+.
+ */
+button::-moz-focus-inner,
+input::-moz-focus-inner {
+  border: 0;
   padding: 0;
 }
 
-.rclick .item {
-  display: block;
-  float: left;
+/**
+ * Address Firefox 4+ setting `line-height` on `input` using `!important` in
+ * the UA stylesheet.
+ */
+input {
+  line-height: normal;
 }
-.rclick .item img {
-  -moz-border-radius: none;
-  -webkit-border-radius: none;
-  border-radius: none;
+
+/**
+ * It's recommended that you don't attempt to style these elements.
+ * Firefox's implementation doesn't respect box-sizing, padding, or width.
+ *
+ * 1. Address box sizing set to `content-box` in IE 8/9/10.
+ * 2. Remove excess padding in IE 8/9/10.
+ */
+input[type="checkbox"],
+input[type="radio"] {
+  box-sizing: border-box;
+  /* 1 */
+  padding: 0;
+  /* 2 */
 }
-.rclick .preview {
-  position: relative;
+
+/**
+ * Fix the cursor style for Chrome's increment/decrement buttons. For certain
+ * `font-size` values of the `input`, it causes the cursor style of the
+ * decrement button to change from `default` to `text`.
+ */
+input[type="number"]::-webkit-inner-spin-button,
+input[type="number"]::-webkit-outer-spin-button {
+  height: auto;
 }
-.rclick .preview img {
-  position: absolute;
-  z-index: 90;
-  max-width: 400px;
-  display: block;
-  border: 1px solid #FCF4DC;
+
+/**
+ * 1. Address `appearance` set to `searchfield` in Safari and Chrome.
+ * 2. Address `box-sizing` set to `border-box` in Safari and Chrome
+ *    (include `-moz` to future-proof).
+ */
+input[type="search"] {
+  -webkit-appearance: textfield;
+  /* 1 */
+  -moz-box-sizing: content-box;
+  -webkit-box-sizing: content-box;
+  /* 2 */
+  box-sizing: content-box;
+}
+
+/**
+ * Remove inner padding and search cancel button in Safari and Chrome on OS X.
+ * Safari (but not Chrome) clips the cancel button when the search input has
+ * padding (and `textfield` appearance).
+ */
+input[type="search"]::-webkit-search-cancel-button,
+input[type="search"]::-webkit-search-decoration {
+  -webkit-appearance: none;
+}
+
+/**
+ * Define consistent border, margin, and padding.
+ */
+fieldset {
+  border: 1px solid #c0c0c0;
+  margin: 0 2px;
+  padding: 0.35em 0.625em 0.75em;
+}
+
+/**
+ * 1. Correct `color` not being inherited in IE 8/9/10/11.
+ * 2. Remove padding so people aren't caught out if they zero out fieldsets.
+ */
+legend {
+  border: 0;
+  /* 1 */
+  padding: 0;
+  /* 2 */
+}
+
+/**
+ * Remove default vertical scrollbar in IE 8/9/10/11.
+ */
+textarea {
+  overflow: auto;
+}
+
+/**
+ * Don't inherit the `font-weight` (applied by a rule above).
+ * NOTE: the default cannot safely be changed in Chrome and Safari on OS X.
+ */
+optgroup {
+  font-weight: bold;
+}
+
+/* Tables
+   ========================================================================== */
+/**
+ * Remove most spacing between table cells.
+ */
+table {
+  border-collapse: collapse;
+  border-spacing: 0;
+}
+
+td,
+th {
+  padding: 0;
+}
+
+.classLink:link {
+  text-decoration: none;
+  color: #ff6600;
+}
+
+.classLink:visited {
+  color: #ff6600;
+}
+
+.classLink:hover {
+  background: #ff6600;
+  border-radius: .5em;
+  color: black;
+}
+
+form * {
+  background: transparent;
+}
+
+input[type=text], input[type=password], input[type=submit], input[type=email], input[type=url], input[type=tel], input[type=number], input[type=datetime], textarea, button, select {
+  -webkit-appearance: none;
+  -moz-appearance: none;
+  border: none;
+  background: none;
+  -webkit-border-radius: 0;
+  -moz-border-radius: 0;
+  border-radius: 0;
+  padding: 5px;
   margin: 0;
-  -moz-border-radius: none;
-  -webkit-border-radius: none;
-  border-radius: none;
-  -moz-box-shadow: black 5px 5px 12px;
-  -webkit-box-shadow: black 5px 5px 12px;
-  box-shadow: black 5px 5px 12px;
+  margin-bottom: 10px;
+}
+
+.group:before, .group:after {
+  content: "\0020";
+  display: block;
+  height: 0;
+  overflow: hidden;
+}
+
+.group:after {
+  clear: both;
+}
+
+.group {
+  zoom: 1;
+}
+
+body {
+  background: #2b323b;
+  background: -webkit-linear-gradient(#475161, #2b323b) no-repeat, #2b313b;
+  background: -moz-linear-gradient(#475161, #2b323b) no-repeat, #2b313b;
+  background: -ms-linear-gradient(#475161, #2b323b) no-repeat, #2b313b;
+  background: -o-linear-gradient(#475161, #2b323b) no-repeat, #2b313b;
+  background: linear-gradient(#475161, #2b323b) no-repeat, #2b313b;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#475161', endColorstr='#2b313b', GradientType=0 );
+}
+
+.hidden {
+  display: none;
+}
+
+.nav ul {
+  display: block;
+  width: 80%;
+  margin: 0 auto;
+  margin-top: 50px;
+  padding: 0;
+  padding-left: 40px;
+  text-align: center;
+}
+
+.nav li {
+  list-style: none;
+  display: inline-block;
+  padding: 5px 10px;
+  margin-right: 5px;
+  color: #fff;
+  background: #93481a;
+  -webkit-border-radius: 10px 10px 0 0;
+  -moz-border-radius: 10px 10px 0 0;
+  border-radius: 10px 10px 0 0;
+  -webkit-box-shadow: inset 0 -3px 4px #6e3614;
+  -moz-box-shadow: inset 0 -3px 4px #6e3614;
+  box-shadow: inset 0 -3px 4px #6e3614;
+  cursor: pointer;
+  zoom: 1;
+  *display: inline;
+}
+
+.nav li#activetab {
+  background: #466e82;
+  font-weight: bold;
+  color: #fff;
+  -webkit-box-shadow: none;
+  -moz-box-shadow: none;
+  box-shadow: none;
+}
+
+@media only screen and (max-device-width: 480px) {
+  .nav ul {
+    margin-top: 5px;
+  }
+}
+#thanks {
+  font: normal .8em/1em Arial, Helvetica, Geneva, sans-serif;
+  background: #ddd;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  width: 80%;
+  margin: 0 auto;
+  max-width: 500px;
+  -webkit-box-shadow: 10px 10px 20px #20242c;
+  padding: 20px;
+}
+
+#thanks h2 {
+  color: #a3643d;
+}
+
+.message {
+  position: relative;
+  top: 15px;
+  width: 300px;
+  margin: 0 auto;
+  margin-bottom: 5px;
+  color: #fff;
+  padding: 5px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #466e82;
+}
+
+.alert {
+  position: absolute;
+  right: 15px;
+  top: 28px;
+  color: #fff;
+  padding: 5px 10px;
+  text-align: center;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  background-color: #93481a;
+}
+
+.dayTableClass td, .dayTableClass th {
+  padding: .5em;
+  border: 1px solid black;
+}
+
+.nameClass {
+  font-weight: bold;
+  text-align: center;
+  white-space: nowrap;
+}
+
+.instructorClass {
+  font-style: italic;
+  text-align: center;
+}
+
+.colTime {
+  white-space: nowrap;
+}
+
+#gxScheduleForm {
+  font: normal .8em/1em Arial, Helvetica, Geneva, sans-serif;
+  width: 80%;
+  margin: 0 auto;
+  background: url(brownlines.jpg) #ddd;
+  -webkit-border-radius: 10px;
+  -moz-border-radius: 10px;
+  border-radius: 10px;
+  -webkit-box-shadow: 10px 10px 20px #20242c;
+  -mox-box-shadow: 10px 10xp 20px #20242c;
+  box-shadow: 10px 10px 20px #20242c;
+}
+
+#gxScheduleForm fieldset {
+  border: none;
+  margin: 0;
+  padding: 0;
+}
+
+#gxScheduleForm fieldset:before {
+  content: attr(title);
+  display: block;
+  padding: 0;
+  padding: 20px 10px 3px 10px;
+  font-weight: bold;
+  font-size: 1.25em;
+  color: #1bb;
+  margin: 0 auto;
+  text-shadow: 1px 1px 1px #3a6;
+}
+
+#gxScheduleForm legend {
+  display: none;
+}
+
+#gxScheduleForm ol {
+  margin: 0px;
+  padding: 0px;
+}
+
+#gxScheduleForm ol li {
+  position: relative;
+  list-style: none;
+  padding: 8px;
+  border-top: 1px solid #eee;
+  border-bottom: 1px solid #888;
+}
+
+#gxScheduleForm ol li:first-child {
+  border-top: none;
+}
+
+#gxScheduleForm ol li:last-child {
+  border-bottom: none;
+}
+
+#gxScheduleForm ol li ol li {
+  padding-bottom: 0;
+  display: inline;
+  padding: 0px;
+  border-top: none;
+  border-bottom: none;
+}
+
+#gxScheduleForm ol li ol li label {
+  font-weight: normal;
+  display: inline;
+  cursor: pointer;
+}
+
+#gxScheduleForm ol li.singleline label {
+  font-weight: normal;
+  display: inline;
+}
+
+#gxScheduleForm ol li label, .grouphead {
+  font-weight: bold;
+  display: block;
+  margin-bottom: 5px;
+  color: #821200;
+  text-shadow: 1px 1px 1px #271200;
+  padding-left: 5px;
+}
+
+#gxScheduleForm ol li input, #gxScheduleForm textarea {
+  display: block;
+  width: 96%;
+  padding: 5px;
+  margin: 0 auto;
+  outline: none;
+  border: 1px solid #999;
+  background: #cccccc;
+  background: -webkit-linear-gradient(#ffffff, #bbbbbb) no-repeat;
+  background: -moz-linear-gradient(#ffffff, #bbbbbb) no-repeat;
+  background: -ms-linear-gradient(#ffffff, #bbbbbb) no-repeat;
+  background: -o-linear-gradient(#ffffff, #bbbbbb) no-repeat;
+  background: linear-gradient(#ffffff, #bbbbbb) no-repeat;
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#ffffff', endColorstr='#bbbbbb', GradientType=0 );
+  -webkit-border-radius: 5px;
+  -moz-border-radius: 5px;
+  border-radius: 5px;
+}
+
+#gxScheduleForm ol li ol li input {
+  width: auto;
+  display: inline;
+}
+
+#gxScheduleForm ol li input[type="checkbox"] {
+  width: auto;
+  display: inline;
+}
+
+#gxScheduleForm textarea {
+  height: 75px;
+}
+
+#gxScheduleForm ol li select {
+  width: 200px;
+  width: 50%;
+  min-width: 100px;
+  color: #411200;
+  font-weight: bold;
+  border: 0;
+  background: #93481a;
+  background: -webkit-linear-gradient(#93481a, #6d2f0e);
+  background: -moz-linear-gradient(#93481a, #6d2f0e);
+  background: -ms-linear-gradient(#93481a, #6d2f0e);
+  background: -o-linear-gradient(#93481a, #6d2f0e);
+  background: linear-gradient(#93481a, #6d2f0e);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93481a', endColorstr='#6d2f0e', GradientType=0 );
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+#gxScheduleForm button, #gxScheduleForm .buttonnav {
+  width: 100px;
+  width: 20%;
+  min-width: 100px;
+  height: 24px;
+  float: right;
+  padding: 0;
+  margin-right: 10px;
+  margin-top: 5px;
+  border: 0;
+  color: #fff;
+  font-weight: bold;
+  cursor: pointer;
+  background: #466e82;
+  background: -webkit-linear-gradient(#466e82, #2c4552);
+  background: -moz-linear-gradient(#466e82, #2c4552);
+  background: -ms-linear-gradient(#466e82, #2c4552);
+  background: -o-linear-gradient(#466e82, #2c4552);
+  background: linear-gradient(#466e82, #2c4552);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#466e82', endColorstr='#2c4552', GradientType=0 );
+  -webkit-border-radius: 8px;
+  -moz-border-radius: 8px;
+  border-radius: 8px;
+}
+
+#gxScheduleForm button:hover, #gxScheduleForm .buttonnav:hover {
+  background: #93481a;
+  background: -webkit-linear-gradient(#93481a, #6d2f0e);
+  background: -moz-linear-gradient(#93481a, #6d2f0e);
+  background: -ms-linear-gradient(#93481a, #6d2f0e);
+  background: -o-linear-gradient(#93481a, #6d2f0e);
+  background: linear-gradient(#93481a, #6d2f0e);
+  filter: progid:DXImageTransform.Microsoft.gradient(startColorstr='#93481a', endColorstr='#6d2f0e', GradientType=0 );
+}
+
+#gxScheduleForm .buttonnav {
+  display: inline-block;
+  height: 19px;
+  padding-top: 5px;
+  text-align: center;
+  margin-bottom: 10px;
+  zoom: 1;
+  *display: inline;
+}
+
+#gxScheduleForm .buttonnav.prev {
+  margin-left: 10px;
+  float: none;
+  background: -webkit-linear-gradient(#466e82, #2c4552);
+}
+
+#gxScheduleForm .buttonnav.prev:hover {
+  margin-left: 10px;
+  float: none;
+  background: -webkit-linear-gradient(#93481a, #6d2f0e);
 }
