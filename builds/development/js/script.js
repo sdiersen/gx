@@ -1,17 +1,121 @@
 (function e(t,n,r){function s(o,u){if(!n[o]){if(!t[o]){var a=typeof require=="function"&&require;if(!u&&a)return a(o,!0);if(i)return i(o,!0);throw new Error("Cannot find module '"+o+"'")}var f=n[o]={exports:{}};t[o][0].call(f.exports,function(e){var n=t[o][1][e];return s(n?n:e)},f,f.exports,e,t,n,r)}return n[o].exports}var i=typeof require=="function"&&require;for(var o=0;o<r.length;o++)s(r[o]);return s})({1:[function(require,module,exports){
+var $,
+	hideDays,
+	removeActive,
+	mondayTab,
+	tuesdayTab,
+	wednesdayTab,
+	thursdayTab,
+	fridayTab,
+	saturdayTab,
+	sundayTab;
 
-var $ = require('jquery');
+$ = require('jquery');
 
-var butt = document.getElementById("activetab");
-var mutt = document.getElementById("monTable");
+mondayTab = document.getElementById("monTab");
+tuesdayTab = document.getElementById("tueTab");
+wednesdayTab = document.getElementById("wedTab");
+thursdayTab = document.getElementById("thuTab");
+fridayTab = document.getElementById("friTab");
+saturdayTab = document.getElementById("satTab");
+sundayTab = document.getElementById("sunTab");
 
-butt.addEventListener('click', function() { alert("This is annoying"); $('.colMon').removeClass("hidden"); }, false);
-mutt.addEventListener('click', function() { alert("Monday Heading"); $('.colMon').addClass("hidden"); }, false);
-//var mondays = document.querySelectorAll(".colMon");
 
-//for (var i=0; i<mondays.length;i++) {
-//    mondays[i].addEventListener('click', function() {alert("Welcome to mondays"); }, false);
-//}
+
+(hideDays = function hideDays() {
+    $('.colMon').addClass("hidden");
+    $('.colTue').addClass("hidden");
+    $('.colWed').addClass("hidden");
+    $('.colThu').addClass("hidden");
+    $('.colFri').addClass("hidden");
+    $('.colSat').addClass("hidden");
+    $('.colSun').addClass("hidden");
+})();
+
+(removeActive = function removeActive() {
+    $('#monTab').removeClass("activeTab");
+    $('#tueTab').removeClass("activeTab");
+    $('#wedTab').removeClass("activeTab");
+    $('#thuTab').removeClass("activeTab");
+    $('#friTab').removeClass("activeTab");
+    $('#satTab').removeClass("activeTab");
+    $('#sunTab').removeClass("activeTab");
+})();
+
+
+
+function toggleDay(tab, col) {
+    if (tab.hasClass("activeTab")) {
+        tab.removeClass("activeTab");
+        col.addClass("hidden");
+    } else {
+        tab.addClass("activeTab");
+        col.removeClass("hidden");
+    }
+}
+
+(resetSchedule = function resetSchedule() {
+    hideDays;
+    removeActive;
+    currentDate = new Date();
+    dayOfWeek = currentDate.getDay();
+    switch(dayOfWeek) {
+        case 0:
+            toggleDay($('#sunTab'), $('.colSun'));
+            break;
+        case 1:
+            toggleDay($('#monTab'), $('.colMon'));
+            break;
+        case 2:
+            toggleDay($('#tueTab'), $('.colTue'));
+            break;
+        case 3:
+            toggleDay($('#wedTab'), $('.colWed'));
+            break;
+        case 4:
+            toggleDay($('#thuTab'), $('.colthu'));
+            break;
+        case 5:
+            toggleDay($('#friTab'), $('.colFri'));
+            break;
+        case 6:
+            toggleDay($('#satTab'), $('.colSat'));
+            break;
+        default:
+            break;
+    }
+
+})();
+
+resetSchedule;
+
+mondayTab.addEventListener('click', function() {
+    toggleDay($(this), $('.colMon'));
+});
+
+tuesdayTab.addEventListener('click', function() {
+    toggleDay($(this), $('.colTue'));
+});
+
+wednesdayTab.addEventListener('click', function() {
+    toggleDay($(this), $('.colWed'));
+});
+
+thursdayTab.addEventListener('click', function() {
+    toggleDay($(this), $('.colThu'));
+});
+
+fridayTab.addEventListener('click', function() {
+    toggleDay($(this), $('.colFri'));
+});
+
+saturdayTab.addEventListener('click', function() {
+    toggleDay($(this), $('.colSat'));
+});
+
+sundayTab.addEventListener('click', function() {
+    toggleDay($(this), $('.colSun'));
+});
 var $, fill;
 
 $ = require('jquery');

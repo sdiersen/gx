@@ -541,7 +541,7 @@ body {
   *display: inline;
 }
 
-.nav li#activetab {
+.nav li.activeTab {
   background: #466e82;
   font-weight: bold;
   color: #fff;
