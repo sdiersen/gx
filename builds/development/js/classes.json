@@ -1,0 +1,664 @@
+{	
+	"gxClasses": {
+		"6:00 am": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"8:00 am": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"8:30 am": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"9:00 am": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"9:15 am": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"9:30 am": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"9:45 am": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"10:00 am": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"10:15 am": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"11:00 am": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"5:00 pm": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"5:15 pm": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"6:00 pm": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"6:15 pm": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		},
+		"6:30 pm": {
+			"monday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"tuesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"wednesday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"thursday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"friday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"saturday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			},
+			"sunday": {
+				"name":"",
+				"location":"",
+				"instructor":"",
+				"classLink":""
+			}
+		}
+	}
+}

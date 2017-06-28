@@ -7,6 +7,8 @@ var $,
 	thursdayTab,
 	fridayTab,
 	saturdayTab,
-	sundayTab;
+	sundayTab,
+	currentDate,
+	dayOfWeek;
 
 $ = require('jquery');
